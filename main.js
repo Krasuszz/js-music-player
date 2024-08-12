@@ -22,10 +22,10 @@ let curr_track = document.createElement('audio');
 // Define the tracks that have to be played
 let track_list = [
   {
-    name: "Night Owl",
-    artist: "Broke For Free",
-    image: "https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-    path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
+    name: "ギターと孤独と蒼い惑星",
+    artist: "結束バンド",
+    image: "https://wx4.sinaimg.cn/mw690/006igRkUgy1hslfwddlstj30u00u0dp6.jpg",
+    path: "http://43.140.245.243:1080/ppp.php?u=kwlb&ikey=34625775414b5246334f6547705779324d42766533754f334f65624f67724d614f54346d59766f322f72306154484b77554934384962736648656466686a6d652b68453437647958663571553234586f366d6a73667541375a554c574e4764786e366236662b3342693263696e70727674354646454e726a686a724137396969&d=7458745246445370626f74567646364344635459717338533173476f4f3450316d78774b336252474266413d&type=302"
   },
   {
     name: "Enthusiast",
