@@ -20,24 +20,44 @@ let updateTimer;
 let curr_track = document.createElement('audio');
 
 // Define the tracks that have to be played
+// pic prefers to be 250x250, depends on /pnglog.com/
+// music depends on /link.hhtjim.com/, sincerely thanks
 let track_list = [
+  {
+    name: "小さな海",
+    artist: "後藤ひとり",
+    image: "https://cdn-us.imgs.moe/2024/08/13/55007862_qijzhJylz1.jpg",
+    path: "https://link.hhtjim.com/163/2003496924.mp3",
+    path1: "https://m10.music.126.net/20240813213529/3abdd36167e0ed40900f94af46cae55e/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/23504259304/0739/5421/3576/0384e5100d83158a85a52fa0df45f71b.mp3",
+    path2: "https://webfs.hw.kugou.com/202408132115/9f6ed55e0459ea572efc4ff24c83a7ca/v3/18438e543e4f6743686ccc14f85af089/yp/p_0_960127/ap1014_us0_mii0w1iw8z2ai2iphcu80ooo2ki81120_pi406_mx471820523_s2249124648.mp3"
+  },
+  {
+    name: "なにが悪い",
+    artist: "伊地知虹夏",
+    image: "https://cdn-us.imgs.moe/2024/08/13/55007862_qijzhJylz1.jpg",
+    path: "https://link.hhtjim.com/163/1996323629.mp3",
+    path1: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3",
+    path2: "https://webfs.hw.kugou.com/202408132119/abf22dbbeacdf470651a822e5b0872a1/v3/2440f326527ce1328947f1ae8a18426b/yp/p_0_960129/ap1014_us0_mii0w1iw8z2ai2iphcu80ooo2ki81120_pi406_mx465082121_s2426868387.mp3"
+  },
+  {
+    name: "カラカラ",
+    artist: "山田リョウ",
+    image: "https://cdn-us.imgs.moe/2024/08/13/55003320_LBcQd60D6H.jpg",
+    path: "https://link.hhtjim.com/163/1988861403.mp3",
+  },
+  {
+    name: "ラブソングが歌えない",
+    artist: "喜多郁代",
+    image: "https://cdn-us.imgs.moe/2024/08/13/55001455_A7Y4Rd5O3w.jpg",
+    path: "https://link.hhtjim.com/163/2003496501.mp3",
+  },
   {
     name: "ギターと孤独と蒼い惑星",
     artist: "結束バンド",
-    image: "https://wx4.sinaimg.cn/mw690/006igRkUgy1hslfwddlstj30u00u0dp6.jpg",
-    path: "http://43.140.245.243:1080/ppp.php?u=kwlb&ikey=34625775414b5246334f6547705779324d42766533754f334f65624f67724d614f54346d59766f322f72306154484b77554934384962736648656466686a6d652b68453437647958663571553234586f366d6a73667541375a554c574e4764786e366236662b3342693263696e70727674354646454e726a686a724137396969&d=7458745246445370626f74567646364344635459717338533173476f4f3450316d78774b336252474266413d&type=302"
-  },
-  {
-    name: "Enthusiast",
-    artist: "Tours",
-    image: "https://images.pexels.com/photos/3100835/pexels-photo-3100835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-    path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
-  },
-  {
-    name: "Shipping Lanes",
-    artist: "Chad Crouch",
-    image: "https://images.pexels.com/photos/1717969/pexels-photo-1717969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-    path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
+    image: "https://cdn-us.imgs.moe/2024/08/13/55001455_A7Y4Rd5O3w.jpg",
+    path: "https://link.hhtjim.com/163/1991012773.mp3",
+    path1: "https://m10.music.126.net/20240813205342/f6c2b4a84148ef545240e59439faec7b/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/21822524190/5ae3/21e7/d62f/81b9fb8d6985317d49b31978903783cf.mp3",
+    path2: "https://webfs.tx.kugou.com/202408132049/460f53b6af79845be075d72348f994ba/v3/6414aa117e7ae275a524610f09907873/yp/p_0_960153/ap1014_us0_mi87a715d64b59c90143a274dafd5c1f01_pi406_mx457770753_s1063625965.mp3"
   },
 ];
 
