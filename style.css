@@ -1,6 +1,6 @@
 body {
   background-color: lightgreen;
-
+  overflow-y: hidden;
   /* Smoothly transition the background color */
   transition: background-color .5s;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .track-name {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .track-artist {
